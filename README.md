@@ -13,3 +13,4 @@ src/test/java
 - api_tests: API tests written using TestNG test structure and RestAssured Library.
 - pages: page objects are created within this folder utulizing Page Object Model design.
 - runners: the Cucumber runner classes reside within this folder.
+- step_definitions: the test steps impl

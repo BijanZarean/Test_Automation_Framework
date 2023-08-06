@@ -1,0 +1,18 @@
+{
+    "id": 11001,
+    "category": {
+        "id": 21,
+        "name": "Dog"
+    },
+    "name": "Wolfy",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 21000,
+            "name": "W21000"
+        }
+    ],
+    "status": "Adopted"
+}

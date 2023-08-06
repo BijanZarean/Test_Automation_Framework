@@ -1,0 +1,1512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="249.528" tests="9" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="webdriver.chrome.driver" value="/Users/bijan/.cache/selenium/chromedriver/mac64/114.0.5735.90/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/bijan/Desktop/Test_Automation_Framework/target/test-classes:/Users/bijan/Desktop/Test_Automation_Framework/target/classes:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/bijan/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/bijan/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/bijan/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bijan/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/bijan/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/bijan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/bijan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/bijan/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/bijan/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-java/6.11.0/cucumber-java-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-core/6.11.0/cucumber-core-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-gherkin/6.11.0/cucumber-gherkin-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.11.0/cucumber-gherkin-messages-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/messages/15.0.0/messages-15.0.0.jar:/Users/bijan/.m2/repository/io/cucumber/tag-expressions/3.0.1/tag-expressions-3.0.1.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/bijan/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-plugin/6.11.0/cucumber-plugin-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/docstring/6.11.0/docstring-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/html-formatter/13.0.0/html-formatter-13.0.0.jar:/Users/bijan/.m2/repository/io/cucumber/create-meta/4.0.0/create-meta-4.0.0.jar:/Users/bijan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-junit/6.11.0/cucumber-junit-6.11.0.jar:/Users/bijan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/bijan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bijan/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/ojdbc8-21.1.0.0.jar:/Users/bijan/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/bijan/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/bijan/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.3/webdrivermanager-4.4.3.jar:/Users/bijan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/bijan/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/bijan/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/bijan/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/bijan/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/bijan/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/bijan/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/bijan/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/bijan/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/bijan/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/bijan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/bijan/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/bijan/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/bijan/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/bijan/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/bijan/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/bijan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/bijan/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/bijan/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/bijan/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/bijan/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/bijan/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/bijan/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/bijan/Desktop/Test_Automation_Framework/target/surefire/surefirebooter-20230803181659176_3.jar /Users/bijan/Desktop/Test_Automation_Framework/target/surefire 2023-08-03T18-16-59_130-jvmRun1 surefire-20230803181659176_1tmp surefire_0-20230803181659176_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/bijan/Desktop/Test_Automation_Framework/target/test-classes:/Users/bijan/Desktop/Test_Automation_Framework/target/classes:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/bijan/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/bijan/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/bijan/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/bijan/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/bijan/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/bijan/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/bijan/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/bijan/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/bijan/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/bijan/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-java/6.11.0/cucumber-java-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-core/6.11.0/cucumber-core-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-gherkin/6.11.0/cucumber-gherkin-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.11.0/cucumber-gherkin-messages-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/messages/15.0.0/messages-15.0.0.jar:/Users/bijan/.m2/repository/io/cucumber/tag-expressions/3.0.1/tag-expressions-3.0.1.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/bijan/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-plugin/6.11.0/cucumber-plugin-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/docstring/6.11.0/docstring-6.11.0.jar:/Users/bijan/.m2/repository/io/cucumber/html-formatter/13.0.0/html-formatter-13.0.0.jar:/Users/bijan/.m2/repository/io/cucumber/create-meta/4.0.0/create-meta-4.0.0.jar:/Users/bijan/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/bijan/.m2/repository/io/cucumber/cucumber-junit/6.11.0/cucumber-junit-6.11.0.jar:/Users/bijan/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/bijan/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/bijan/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.1.0.0/ojdbc8-21.1.0.0.jar:/Users/bijan/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar:/Users/bijan/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/bijan/.m2/repository/io/github/bonigarcia/webdrivermanager/4.4.3/webdrivermanager-4.4.3.jar:/Users/bijan/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/bijan/.m2/repository/commons-io/commons-io/2.8.0/commons-io-2.8.0.jar:/Users/bijan/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.0.2/httpcore5-h2-5.0.2.jar:/Users/bijan/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/bijan/.m2/repository/org/rauschig/jarchivelib/1.1.0/jarchivelib-1.1.0.jar:/Users/bijan/.m2/repository/org/apache/commons/commons-compress/1.20/commons-compress-1.20.jar:/Users/bijan/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1.jar:/Users/bijan/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/bijan/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/bijan/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/bijan/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/bijan/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/bijan/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/bijan/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/bijan/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/bijan/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/bijan/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/bijan/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/bijan/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/bijan/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/bijan/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/bijan/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/bijan/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/bijan/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/bijan/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/bijan/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/bijan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/bijan/Desktop/Test_Automation_Framework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/bijan/Desktop/Test_Automation_Framework/target/surefire/surefirebooter-20230803181659176_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="11.0.19+9-LTS-224"/>
+    <property name="user.name" value="bijan"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.4.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/bijan/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/lk/_km38f5x10zb4jp8_t7ddxpm0000gn/T/"/>
+    <property name="java.version" value="11.0.19"/>
+    <property name="user.dir" value="/Users/bijan/Desktop/Test_Automation_Framework"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/bijan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.19+9-LTS-224"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="createAPet" classname="api_tests.ExampleAPITests" time="0.551">
+    <system-out><![CDATA[{
+    "id": 1718,
+    "category": {
+        "id": 21,
+        "name": "Dog"
+    },
+    "name": "Wolfy",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 21000,
+            "name": "W21000"
+        }
+    ],
+    "status": "Available"
+}
+Wolfy
+Dog
+1718
+Available
+W21000
+]]></system-out>
+  </testcase>
+  <testcase name="createAPetWithJSONFile" classname="api_tests.ExampleAPITests" time="0.068">
+    <system-out><![CDATA[{
+    "id": 11001,
+    "category": {
+        "id": 21,
+        "name": "Dog"
+    },
+    "name": "Wolfy",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 21000,
+            "name": "W21000"
+        }
+    ],
+    "status": "Adopted"
+}
+Wolfy
+Dog
+11001
+Adopted
+W21000
+]]></system-out>
+  </testcase>
+  <testcase name="findPetsByStatus" classname="api_tests.ExampleAPITests" time="0.066"/>
+  <testcase name="findPetsByStatus_providingQueryParam" classname="api_tests.ExampleAPITests" time="0.062">
+    <system-out><![CDATA[[
+    {
+        "id": 9223372036854294611,
+        "category": {
+            "id": -88990991,
+            "name": "ea commodo dolor irure"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "Lorem culpa tempor laborum elit",
+            "veniam adipisicing aliqua"
+        ],
+        "tags": [
+            {
+                "id": 54287335,
+                "name": "enim nisi commodo"
+            },
+            {
+                "id": -43453937,
+                "name": "laborum"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 37930519,
+        "category": {
+            "id": -20083820,
+            "name": "est"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "consectetur",
+            "proident sint"
+        ],
+        "tags": [
+            {
+                "id": -50305895,
+                "name": "occaecat labore"
+            },
+            {
+                "id": -90748378,
+                "name": "Duis irure"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 9223372036854294693,
+        "category": {
+            "id": 30128,
+            "name": "Êñ="
+        },
+        "name": "",
+        "photoUrls": [
+            "",
+            "&amp#25;",
+            "򩨂&amp#25;eð=",
+            "ý¡ÏÚµ&amp#3;÷±򘳍&amp#18;Â𯒇û6񽃀Âp󞌎"
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 9223372036854294696,
+        "category": {
+            "id": -31363
+        },
+        "name": "¼!à«®¡ã",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 1101692665985,
+        "category": {
+            "id": 0,
+            "name": ""
+        },
+        "name": "󦯉-",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 260,
+        "category": {
+            "id": 1,
+            "name": "black"
+        },
+        "name": "Boo",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "dog"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 260945632586325635,
+        "category": {
+            "id": 2,
+            "name": "black"
+        },
+        "name": "Boo",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "dog"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 123456789101112,
+        "category": {
+            "id": 1,
+            "name": "black"
+        },
+        "name": "Boo",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "dog"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 3050,
+        "category": {
+            "id": 0,
+            "name": "string"
+        },
+        "name": "Shippo",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "string"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 20593238,
+        "category": {
+            "id": 96650357,
+            "name": "ut aute"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "in deserunt sit qui elit",
+            "do dolore"
+        ],
+        "tags": [
+            {
+                "id": 80489283,
+                "name": "dolore elit aute Excepteur anim"
+            },
+            {
+                "id": -29854588,
+                "name": "enim"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 1235648545466,
+        "category": {
+            "id": 2,
+            "name": "dog"
+        },
+        "name": "anna",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 253,
+        "category": {
+            "id": 2,
+            "name": "dog"
+        },
+        "name": "Jamir",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 700,
+        "category": {
+            "id": 2,
+            "name": "dog"
+        },
+        "name": "{{$randomfirstname}}",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 107,
+        "category": {
+            "id": 2,
+            "name": "dog"
+        },
+        "name": "Adalberto",
+        "photoUrls": [
+            
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 1907484361,
+        "name": "tNJjHAIYQE",
+        "photoUrls": [
+            "mrfaPWwJPR"
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 999999999,
+        "category": {
+            "id": 1,
+            "name": "Dogs"
+        },
+        "name": "Miguel",
+        "photoUrls": [
+            "Photo"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "Tag New Pet"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 74408294,
+        "category": {
+            "id": 70278030,
+            "name": "in adipisicing"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "nostrud sunt eu occaecat elit",
+            "esse aute non magna"
+        ],
+        "tags": [
+            {
+                "id": 81618844,
+                "name": "id aliquip"
+            },
+            {
+                "id": -96817599,
+                "name": "ut elit esse"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 56331470,
+        "category": {
+            "id": 28262311,
+            "name": "nostrud proident"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "sunt dolor veniam aliqua",
+            "nulla anim ex"
+        ],
+        "tags": [
+            {
+                "id": 21515670,
+                "name": "voluptate in elit ani"
+            },
+            {
+                "id": -36858804,
+                "name": "proident non deserunt"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 3708840,
+        "category": {
+            "id": 9855812,
+            "name": "Duis in commodo"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "minim id in sit",
+            "est esse culpa nisi"
+        ],
+        "tags": [
+            {
+                "id": -89808508,
+                "name": "sit"
+            },
+            {
+                "id": -5238278,
+                "name": "dolor in"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 922337203685477590,
+        "name": "rex",
+        "photoUrls": [
+            "./dog.png"
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 24093935,
+        "category": {
+            "id": -6714225,
+            "name": "do magna"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "aute",
+            "velit"
+        ],
+        "tags": [
+            {
+                "id": 71561130,
+                "name": "deserunt ut occaecat"
+            },
+            {
+                "id": -1195842,
+                "name": "nulla nostrud occaeca"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 91507602,
+        "category": {
+            "id": -95494262,
+            "name": "sit ea"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "deserunt",
+            "id sint et"
+        ],
+        "tags": [
+            {
+                "id": -54029842,
+                "name": "ullamco"
+            },
+            {
+                "id": 13198949,
+                "name": "id"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 3903023,
+        "category": {
+            "id": -56789506,
+            "name": "cillum p"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "aliquip Excepteur",
+            "commodo dolore consequat eu"
+        ],
+        "tags": [
+            {
+                "id": 60937326,
+                "name": "irure in"
+            },
+            {
+                "id": 20218536,
+                "name": "sint consectetur ad voluptate"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 1173208884,
+        "name": "LqpWkxI",
+        "photoUrls": [
+            "seJGUCrVfSabh"
+        ],
+        "tags": [
+            
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 437,
+        "category": {
+            "id": 597,
+            "name": "gDCShkS"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "dFVm5",
+            "7BLgcGTV",
+            "jQZTbY1x",
+            "UhF1c",
+            "Pk5b2d"
+        ],
+        "tags": [
+            {
+                "id": 455,
+                "name": "y6z"
+            },
+            {
+                "id": 953,
+                "name": "IfwSO"
+            },
+            {
+                "id": 555,
+                "name": "v8LIli"
+            },
+            {
+                "id": 443,
+                "name": "YqfzeB"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 82188160,
+        "category": {
+            "id": 81640824,
+            "name": "nisi exercitation reprehenderit dolore"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "proident eu enim",
+            "mollit cillum nisi"
+        ],
+        "tags": [
+            {
+                "id": 6316356,
+                "name": "laborum magn"
+            },
+            {
+                "id": 73149614,
+                "name": "veniam fugiat amet si"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 777123,
+        "category": {
+            "id": 777123,
+            "name": "fish"
+        },
+        "name": "Nemo",
+        "photoUrls": [
+            "https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;h=750",
+            "https://img1.fonwall.ru/o/hl/sea-photography-flower-underwater.jpeg?route=mid&amp;h=750"
+        ],
+        "tags": [
+            {
+                "id": 123,
+                "name": "priff"
+            },
+            {
+                "id": 123,
+                "name": "ribka"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 75854097,
+        "category": {
+            "id": 66719630,
+            "name": "id eiusmod incididunt cillum"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "nostrud nulla fugi",
+            "voluptate sit"
+        ],
+        "tags": [
+            {
+                "id": 35794735,
+                "name": "dolore Duis reprehenderit"
+            },
+            {
+                "id": 57237806,
+                "name": "eiusmod tempor nisi ipsum"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 38480305,
+        "category": {
+            "id": -59161747,
+            "name": "Duis voluptate consequat"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "ex enim ",
+            "nisi est"
+        ],
+        "tags": [
+            {
+                "id": 49121599,
+                "name": "non anim exercitation"
+            },
+            {
+                "id": 2672065,
+                "name": "sint"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 79897977,
+        "category": {
+            "id": -43696612,
+            "name": "exercitation"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "dolor",
+            "velit voluptate"
+        ],
+        "tags": [
+            {
+                "id": 59218385,
+                "name": "aliqua"
+            },
+            {
+                "id": 72829050,
+                "name": "nostrud ut"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 76621170,
+        "category": {
+            "id": 16364966,
+            "name": "Ut cupidatat velit irure minim"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "dolore quis",
+            "elit ea aliqua dolor adipisicing"
+        ],
+        "tags": [
+            {
+                "id": 24591216,
+                "name": "ullamco magna laborum ut"
+            },
+            {
+                "id": 52512638,
+                "name": "sunt non Lorem"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 85118363,
+        "category": {
+            "id": -40147695,
+            "name": "sunt officia"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "consequat ex nisi sed",
+            "nostrud proident quis"
+        ],
+        "tags": [
+            {
+                "id": 95590403,
+                "name": "commodo"
+            },
+            {
+                "id": -7638681,
+                "name": "anim non"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 37326840,
+        "category": {
+            "id": 95326727,
+            "name": "proident officia"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "dolore ea sunt dolor",
+            "dolor officia aliquip"
+        ],
+        "tags": [
+            {
+                "id": -66063065,
+                "name": "quis elit"
+            },
+            {
+                "id": 80111734,
+                "name": "enim id"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 62751340,
+        "category": {
+            "id": -37441254,
+            "name": "aute cillum voluptate veniam"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "mollit veniam",
+            "dolor enim reprehenderit"
+        ],
+        "tags": [
+            {
+                "id": 91709679,
+                "name": "anim adipisicing"
+            },
+            {
+                "id": 919209,
+                "name": "sint anim"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 5644444,
+        "category": {
+            "id": 566555,
+            "name": "nulla minim laborum deserunt"
+        },
+        "name": "Собака",
+        "photoUrls": [
+            "anim ullamco laborum eu",
+            "eiusm"
+        ],
+        "tags": [
+            {
+                "id": 10156776,
+                "name": "cillum adipisicing"
+            },
+            {
+                "id": -53013483,
+                "name": "sit Ut enim dolore"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 9223372036854775458,
+        "category": {
+            "id": -1545904,
+            "name": "fishs"
+        },
+        "name": "nemo fish",
+        "photoUrls": [
+            "fugiat ex",
+            "https://img.freepik.com/free-vector/one-goldfish-on-white-background_1308-73185.jpg"
+        ],
+        "tags": [
+            {
+                "id": 78174477,
+                "name": "sint aliquip"
+            },
+            {
+                "id": 34196593,
+                "name": "tempor cillum incididunt exercitation veniam"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 23437566,
+        "category": {
+            "id": -46393995,
+            "name": "ex ea culpa"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "ut ex veniam dolor",
+            "in aliquip"
+        ],
+        "tags": [
+            {
+                "id": 91638732,
+                "name": "Excepteur ea commodo esse"
+            },
+            {
+                "id": 42980181,
+                "name": "nulla officia ut labore"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 40010473,
+        "category": {
+            "id": -13430874,
+            "name": "in fugiat ipsum"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "proident sed ut",
+            "aute laboris elit occaecat aliquip"
+        ],
+        "tags": [
+            {
+                "id": -64712721,
+                "name": "ad"
+            },
+            {
+                "id": 40504054,
+                "name": "in"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 87705905,
+        "category": {
+            "id": 22032096,
+            "name": "reprehenderit in minim"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "cillum Ut ",
+            "et adipisicing consequat"
+        ],
+        "tags": [
+            {
+                "id": -14103627,
+                "name": "reprehenderit"
+            },
+            {
+                "id": 47181501,
+                "name": "occaecat"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 90369791,
+        "category": {
+            "id": -28594492,
+            "name": "ad"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "nulla ipsum dolor",
+            "cillum"
+        ],
+        "tags": [
+            {
+                "id": 16964237,
+                "name": "velit aliquip occaecat voluptate"
+            },
+            {
+                "id": -32143651,
+                "name": "sed nulla sint"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 23327731,
+        "category": {
+            "id": -92357313,
+            "name": "reprehenderit ut nostrud ut"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "Lorem laboris",
+            "laboris"
+        ],
+        "tags": [
+            {
+                "id": 89386643,
+                "name": "elit esse cillum"
+            },
+            {
+                "id": -23396785,
+                "name": "minim consectetur"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 24572652,
+        "category": {
+            "id": 70314021,
+            "name": "adipisicing dolore"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "magna dolor Ut in",
+            "in eiusm"
+        ],
+        "tags": [
+            {
+                "id": 85643839,
+                "name": "aliquip sit dolor"
+            },
+            {
+                "id": -89364963,
+                "name": "elit id reprehenderit eiusmod exercitation"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 2022000,
+        "category": {
+            "id": 0,
+            "name": "bird"
+        },
+        "name": "Star",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 0,
+                "name": "shy"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 52931566,
+        "category": {
+            "id": 91307171,
+            "name": "sint aliqua"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "ut culpa null",
+            "quis"
+        ],
+        "tags": [
+            {
+                "id": -40794559,
+                "name": "velit proident nulla"
+            },
+            {
+                "id": -14228534,
+                "name": "ess"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 24364310,
+        "category": {
+            "id": -12307344,
+            "name": "kitten бфрмалейка"
+        },
+        "name": "kitten1",
+        "photoUrls": [
+            "dolor in",
+            "occaecat dolore consectetur adipisicing"
+        ],
+        "tags": [
+            {
+                "id": -22679152,
+                "name": "non ex"
+            },
+            {
+                "id": 33284191,
+                "name": "sed pariatur in"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 51338511,
+        "category": {
+            "id": 43003430,
+            "name": "ex ullamco"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "sit ipsum",
+            "nulla eu aliqua incididunt"
+        ],
+        "tags": [
+            {
+                "id": 1864541,
+                "name": "anim elit amet"
+            },
+            {
+                "id": 98553871,
+                "name": "ut"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 70119872,
+        "category": {
+            "id": 93142102,
+            "name": "Змея"
+        },
+        "name": "Анаконда",
+        "photoUrls": [
+            "mollit",
+            "https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg"
+        ],
+        "tags": [
+            {
+                "id": -19037377,
+                "name": "deserunt veniam nulla reprehenderit"
+            },
+            {
+                "id": 51503358,
+                "name": "ullamco aliqua Excepteur cillum"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 70119872000,
+        "category": {
+            "id": 93142102,
+            "name": "Заяц французский 2"
+        },
+        "name": "LAPIN LAPIN",
+        "photoUrls": [
+            "mollit",
+            "https://irecommend.ru/sites/default/files/product-images/98227/3lJyZagay9aoxv06o6TJCQ.jpg"
+        ],
+        "tags": [
+            {
+                "id": -19037377,
+                "name": "deserunt veniam nulla reprehenderit"
+            },
+            {
+                "id": 51503358,
+                "name": "ullamco aliqua Excepteur cillum"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 33377689,
+        "category": {
+            "id": -5871190,
+            "name": "in voluptate velit proident"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "amet in",
+            "aute in"
+        ],
+        "tags": [
+            {
+                "id": -26593919,
+                "name": "tempor eiusmod ipsum"
+            },
+            {
+                "id": 78722837,
+                "name": "in sit ullamco aliqua qui"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 22061989,
+        "category": {
+            "id": 74991505,
+            "name": "22222222222"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "ea commodo magna consectetur",
+            "in id eiusmod"
+        ],
+        "tags": [
+            {
+                "id": 65746043,
+                "name": "dolor sint123"
+            },
+            {
+                "id": -8134129,
+                "name": "gled"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 33845545,
+        "category": {
+            "id": -13100367,
+            "name": "deserunt aute irure"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "dolore reprehenderit adipisicing sed",
+            "tempor irure consectetur amet"
+        ],
+        "tags": [
+            {
+                "id": -43225306,
+                "name": "laborum proident Excepteur"
+            },
+            {
+                "id": -7466415,
+                "name": "ut in cupidatat laboris"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 1711982,
+        "category": {
+            "id": 52551857,
+            "name": "non Lorem tempor"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "veniam",
+            "reprehenderit commodo proident occaecat"
+        ],
+        "tags": [
+            {
+                "id": -12689894,
+                "name": "veniam mollit"
+            },
+            {
+                "id": -27514803,
+                "name": "sed ullamco ut"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 38541659,
+        "category": {
+            "id": -70999792,
+            "name": "dolore aliqua irure"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "cupidatat quis",
+            "ipsum deserunt"
+        ],
+        "tags": [
+            {
+                "id": 96985450,
+                "name": "proident adipisicing officia"
+            },
+            {
+                "id": -17203769,
+                "name": "sunt reprehenderit"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 49199499,
+        "category": {
+            "id": 20305865,
+            "name": "et cupidatat nisi incididunt"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "sunt esse consequat",
+            "Ut nostrud anim adipisicing"
+        ],
+        "tags": [
+            {
+                "id": 33995919,
+                "name": "tempor non nostrud"
+            },
+            {
+                "id": -54707686,
+                "name": "qui pariatur"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 50,
+        "category": {
+            "id": 2,
+            "name": "dog_category50"
+        },
+        "name": "dognamesold",
+        "photoUrls": [
+            "string"
+        ],
+        "tags": [
+            {
+                "id": 51,
+                "name": "dognamesold"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 29798634,
+        "category": {
+            "id": -94022803,
+            "name": "fish"
+        },
+        "name": "Name",
+        "photoUrls": [
+            "mollit dolor sunt",
+            "https://www.google.com/imgres?imgurl=https%3A%2F%2Fres.cloudinary.com%2Fdk-find-out%2Fimage%2Fupload%2Fq_80%2Cw_1920%2Cf_auto%2FDCTM_Penguin_UK_DK_AL644648_p7nd0z.jpg&imgrefurl=https%3A%2F%2Fwww.dkfindout.com%2Fuk%2Fanimals-and-nature%2Ffish%2Fwhat-is-fish%2F&tbnid=MveprXRS9aQbrM&vet=12ahUKEwiIr8vJ7Nn4AhUH57sIHZQxDSYQMygCegUIARC8AQ..i&docid=KLzen7t0FblZ7M&w=1920&h=1030&q=fish&ved=2ahUKEwiIr8vJ7Nn4AhUH57sIHZQxDSYQMygCegUIARC8AQ"
+        ],
+        "tags": [
+            {
+                "id": -59367625,
+                "name": "quis et"
+            },
+            {
+                "id": -59958608,
+                "name": "laborum magna dolore consequat"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 2979863411,
+        "category": {
+            "id": -94022803,
+            "name": "fish"
+        },
+        "name": "Name fish",
+        "photoUrls": [
+            "mollit dolor sunt",
+            "https://www.google.com/imgres?imgurl=https%3A%2F%2Fres.cloudinary.com%2Fdk-find-out%2Fimage%2Fupload%2Fq_80%2Cw_1920%2Cf_auto%2FDCTM_Penguin_UK_DK_AL644648_p7nd0z.jpg&imgrefurl=https%3A%2F%2Fwww.dkfindout.com%2Fuk%2Fanimals-and-nature%2Ffish%2Fwhat-is-fish%2F&tbnid=MveprXRS9aQbrM&vet=12ahUKEwiIr8vJ7Nn4AhUH57sIHZQxDSYQMygCegUIARC8AQ..i&docid=KLzen7t0FblZ7M&w=1920&h=1030&q=fish&ved=2ahUKEwiIr8vJ7Nn4AhUH57sIHZQxDSYQMygCegUIARC8AQ"
+        ],
+        "tags": [
+            {
+                "id": -59367625,
+                "name": "quis et"
+            },
+            {
+                "id": -59958608,
+                "name": "laborum magna dolore consequat"
+            }
+        ],
+        "status": "sold"
+    },
+    {
+        "id": 36872199,
+        "category": {
+            "id": 87131763,
+            "name": "consectetur"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "officia",
+            "fugiat Duis sint"
+        ],
+        "tags": [
+            {
+                "id": -32111804,
+                "name": "sit consectetur"
+            },
+            {
+                "id": -4313164,
+                "name": "consectetur nulla laborum id"
+            }
+        ],
+        "status": "sold"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="petNotFound" classname="api_tests.ExampleAPITests" time="0.043">
+    <system-out><![CDATA[{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteThePet" classname="api_tests.ExampleAPITests" time="0.047">
+    <system-out><![CDATA[{
+    "code": 200,
+    "type": "unknown",
+    "message": "11001"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getAPetByID" classname="api_tests.ExampleAPITests" time="0.044">
+    <failure message="expected [200] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at api_tests.ExampleAPITests.getAPetByID(ExampleAPITests.java:156)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[{
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getAPetByID_ChainValidation" classname="api_tests.ExampleAPITests" time="0.05">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at api_tests.ExampleAPITests.getAPetByID_ChainValidation(ExampleAPITests.java:170)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="updateAPet" classname="api_tests.ExampleAPITests" time="0.062">
+    <system-out><![CDATA[{
+    "id": 11001,
+    "category": {
+        "id": 21,
+        "name": "Dog"
+    },
+    "name": "Darko",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+        {
+            "id": 21000,
+            "name": "W21000"
+        }
+    ],
+    "status": "Adopted"
+}
+Darko
+Dog
+11001
+Adopted
+W21000
+]]></system-out>
+  </testcase>
+</testsuite>

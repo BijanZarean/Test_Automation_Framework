@@ -127,7 +127,7 @@ public class ExampleAPITests {
 	public void createAPetWithJSONFile() {
 
 		String endpoint = "/pet";
-		File requestBody = new File("./src/test/resources/json_files/CreateAPet.json");
+		File requestBody = new File("./src/test/resources/test_files/CreateAPet.json");
 
 		response = given().contentType("application/json").accept(ContentType.JSON).body(requestBody).when()
 				.post(endpoint).thenReturn();

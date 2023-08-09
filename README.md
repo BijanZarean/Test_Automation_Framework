@@ -74,9 +74,9 @@ Other tools used for end 2 end testing
 For running the tests remotely through a CI/CD tool such as Jenkins
 4. Create a build in 'pom.xml' and point to the runner class in build configuration. (refer to pom.xml in this project for an example)
 5. On Jenkins job under 'build workflow', select 'top level maven target' and pass the following command:
-'''bash
+```bash
 clean test -Dcucumber.filter.tags="@smoketest"
-'''
+```
 
 ### Running API Tests
 
@@ -86,11 +86,11 @@ For running the tests remotely through a CI/CD tool such as Jenkins
 2. Create a 'TestNG.xml' file and define a TestNG suite that contains the API test classes that you want to execute.
 3. Create a profile in pom.xml file that includes the TestNG xml as a test suite.
 4. On jenkins under 'build workflow', select 'top level maven target' and pass the following command:
-'''bash
+```bash
 clean test -P<profileId>
 
 Profile example:
-'''
+```
 	<profiles>
 		<profile>
 			<id>api_tests</id>
@@ -110,4 +110,4 @@ Profile example:
 			</build>
 		</profile>
 	</profiles>
-'''
+```

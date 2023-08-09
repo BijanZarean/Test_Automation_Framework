@@ -88,9 +88,9 @@ For running the tests remotely through a CI/CD tool such as Jenkins
 4. On jenkins under 'build workflow', select 'top level maven target' and pass the following command:
 ```bash
 clean test -P<profileId>
-
-Profile example:
 ```
+Profile example:
+```bash
 	<profiles>
 		<profile>
 			<id>api_tests</id>

@@ -29,7 +29,7 @@ public class AmazonHomePage {
 	@FindBy(id = "searchDropdownBox")
 	public WebElement departmentsDropdown;
 
-	@FindBy(xpath = "//input[@id='twotabsearchtextbox']")
+	@FindBy(xpath = "//form[@name='site-search']//child::input[@type='text']")
 	public WebElement searchField;
-
+	//input[@id='twotabsearchtextbox']
 }

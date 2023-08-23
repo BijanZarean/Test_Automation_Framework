@@ -22,7 +22,7 @@ import io.cucumber.junit.CucumberOptions;
 		//Telling the runner class where the step definition classes reside in the project framework.
 		glue="step_definitions",
 		//Telling the runner class which cucumber scenario tests to run in the feature files.
-		tags="@TestExamples"
+		tags="@amazonDepartmentsTest"
 		,publish=true
 		)
 

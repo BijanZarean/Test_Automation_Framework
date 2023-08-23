@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-08-22T17:04:23.386Z",
+        "start_timestamp": "2023-08-22T17:56:49.344Z",
         "before": [
           {
             "result": {
-              "duration": 10338202000,
+              "duration": 6664530000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 162835000,
+              "duration": 4289000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 26661583000,
+              "duration": 22432280000,
               "status": "passed"
             },
             "line": 7,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 5610764000,
+              "duration": 1129933000,
               "status": "passed"
             },
             "line": 8,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 1618127000,
+              "duration": 12710723000,
               "status": "passed"
             },
             "line": 9,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 14483957000,
+              "duration": 17579266000,
               "status": "passed"
             },
             "line": 10,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 4913929000,
+              "duration": 53245000,
               "status": "passed"
             },
             "line": 11,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 7501369000,
+              "duration": 2416194000,
               "status": "passed"
             },
             "line": 12,
@@ -145,374 +145,6 @@
           },
           {
             "name": "@amazonDepartmentsTest"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-08-22T17:05:34.828Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6282898000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.setup()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "As a user, I am able to search for different products and recieve appropriate results",
-        "description": "",
-        "id": "amazon-departments-and-search-test-examples;as-a-user--i-am-able-to-search-for-different-products-and-recieve-appropriate-results;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 248236000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.teardown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 13812298000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I am on the amazon homepage",
-            "match": {
-              "location": "step_definitions.AmazonTestSteps.i_am_on_the_amazon_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 33021467000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I search \"coffee mug\" and click the search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"coffee mug\"",
-                  "offset": 9
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_search_and_click_the_search_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4072700000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should be on the \"coffee mug\" search result page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"coffee mug\"",
-                  "offset": 19
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_should_be_on_the_search_result_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TestExamples"
-          },
-          {
-            "name": "@amazon"
-          },
-          {
-            "name": "@amazonSearchTest"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-08-22T17:06:32.295Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5531404000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.setup()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "As a user, I am able to search for different products and recieve appropriate results",
-        "description": "",
-        "id": "amazon-departments-and-search-test-examples;as-a-user--i-am-able-to-search-for-different-products-and-recieve-appropriate-results;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 110825000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.teardown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 21119287000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I am on the amazon homepage",
-            "match": {
-              "location": "step_definitions.AmazonTestSteps.i_am_on_the_amazon_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 19941357000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I search \"pretty coffee mug\" and click the search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pretty coffee mug\"",
-                  "offset": 9
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_search_and_click_the_search_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 743989000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should be on the \"pretty coffee mug\" search result page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"pretty coffee mug\"",
-                  "offset": 19
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_should_be_on_the_search_result_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TestExamples"
-          },
-          {
-            "name": "@amazon"
-          },
-          {
-            "name": "@amazonSearchTest"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-08-22T17:07:19.767Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4793693000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.setup()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "As a user, I am able to search for different products and recieve appropriate results",
-        "description": "",
-        "id": "amazon-departments-and-search-test-examples;as-a-user--i-am-able-to-search-for-different-products-and-recieve-appropriate-results;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 105725000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.teardown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 11105251000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I am on the amazon homepage",
-            "match": {
-              "location": "step_definitions.AmazonTestSteps.i_am_on_the_amazon_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7522915000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I search \"cool coffee mug\" and click the search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"cool coffee mug\"",
-                  "offset": 9
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_search_and_click_the_search_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 344044000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should be on the \"cool coffee mug\" search result page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"cool coffee mug\"",
-                  "offset": 19
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_should_be_on_the_search_result_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TestExamples"
-          },
-          {
-            "name": "@amazon"
-          },
-          {
-            "name": "@amazonSearchTest"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2023-08-22T17:07:43.654Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5423549000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.setup()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "As a user, I am able to search for different products and recieve appropriate results",
-        "description": "",
-        "id": "amazon-departments-and-search-test-examples;as-a-user--i-am-able-to-search-for-different-products-and-recieve-appropriate-results;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 90512000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "step_definitions.hooks.teardown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 6343066000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "I am on the amazon homepage",
-            "match": {
-              "location": "step_definitions.AmazonTestSteps.i_am_on_the_amazon_homepage()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 14611429000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I search \"cute coffee mug\" and click the search button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"cute coffee mug\"",
-                  "offset": 9
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_search_and_click_the_search_button(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8323000,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "I should be on the \"cute coffee mug\" search result page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"cute coffee mug\"",
-                  "offset": 19
-                }
-              ],
-              "location": "step_definitions.AmazonTestSteps.i_should_be_on_the_search_result_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@TestExamples"
-          },
-          {
-            "name": "@amazon"
-          },
-          {
-            "name": "@amazonSearchTest"
           }
         ]
       }

@@ -30,11 +30,8 @@ public static WebDriver getDriver() {
 	}
 	if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
 		switch (browser) {
-		case "firefox":
-			FirefoxDriverManager.firefoxdriver().setup();
-			FirefoxOptions ffoptions = new FirefoxOptions();
-			ffoptions.setHeadless(true);
-			driver = new FirefoxDriver(ffoptions);
+		case "firefox" :
+			driver = new FirefoxDriver();
 			break;
 		case "edge":
 			EdgeDriverManager.edgedriver().setup();

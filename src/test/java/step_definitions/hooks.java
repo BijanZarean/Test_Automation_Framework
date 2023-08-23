@@ -1,5 +1,6 @@
 package step_definitions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
@@ -16,7 +17,7 @@ public class hooks {
 	@Before
 	public void setup() {
 		System.out.println("This is before hook");
-		Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Driver.getDriver().manage().window().maximize();
 	}
 	

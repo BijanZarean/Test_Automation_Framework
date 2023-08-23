@@ -1,5 +1,6 @@
 package utilities;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Random;
@@ -25,19 +26,19 @@ public class BrowserUtils {
 
 	// waits for an element to be visible
 	public void waitUntilElementvisible(WebElement element) {
-		wait = new WebDriverWait(Driver.getDriver(), 5);
+		wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	// waits for an element to be gone
 	public void waitUntilElementNotvisible(WebElement element) {
-		wait = new WebDriverWait(Driver.getDriver(), 15);
+		wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
 	// wit until element is able to be clicked
 	public void waitUntilElementToBeClickable(WebElement element) {
-		wait = new WebDriverWait(Driver.getDriver(), 10);
+		wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 

@@ -1,5 +1,6 @@
 package utilities;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,9 +10,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
-import io.github.bonigarcia.wdm.managers.EdgeDriverManager;
-import io.github.bonigarcia.wdm.managers.FirefoxDriverManager;
 
 public class Driver {
 	
@@ -22,48 +20,52 @@ public class Driver {
  * all I have to do is change the browser name in the env.properties file.
  */
 
-private static WebDriver driver;
-public static WebDriver getDriver() {
-	String browser = System.getProperty("browser");
-	if (browser == null) {
-		browser = DataReader.getProperty("browser");
-	}
-	if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
-		switch (browser) {
-		case "firefox" :
-			driver = new FirefoxDriver();
-			break;
-		case "edge":
-			EdgeDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
-			break;
-		case "safari":
-			driver = new SafariDriver();
-			break;
-		case "chrome":
-			ChromeDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			break;
-		case "headless":
-		default:
-			
-			/*
-			 * ChromeDriverManager class will attempt to download the chromedriver binary and sets up its path to 
-			 * the code with JVM so selenium can find it and run the test using the driver binary executable file.
-			 */
-			
-			ChromeDriverManager.chromedriver().setup();
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
-			options.addArguments("--window-size=1920,1080");
-			driver = new ChromeDriver(options);
+	public static WebDriver driver;
+	static ChromeOptions chromeOptions;
+
+	public static WebDriver getDriver() {
+		String browser = System.getProperty("browser");
+		if (browser == null) {
+			//Reading from the env.properties file and assigns browser whatever browser_type is:
+			browser = DataReader.getProperty("browser_type");
 		}
+		if (driver == null || ((RemoteWebDriver) driver).getSessionId() == null) {
+			switch (browser) {
+			case "chrome-headless":
+				chromeOptions = new ChromeOptions();
+				chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+				chromeOptions.addArguments("--headless");
+				driver = new ChromeDriver(chromeOptions);
+				break;
+			case "chrome":
+				driver = new ChromeDriver();
+				break;
+			case "firefox":
+				driver = new FirefoxDriver();
+				break;
+			case "firefox-headless":
+				FirefoxOptions firefoxOptions = new FirefoxOptions();
+				firefoxOptions.addArguments("--headless");
+				driver = new FirefoxDriver(firefoxOptions);
+				break;
+			case "safari":
+				driver = new SafariDriver();
+				break;
+			case "edge":
+				driver = new EdgeDriver();
+				break;
+			default:
+				ChromeOptions Options = new ChromeOptions();
+				Options.addArguments("--headless");
+				driver = new ChromeDriver(Options);
+				break;
+			}
+		}
+		return driver;
 	}
-	return driver;
-}
-	
+
 	public static void quitDriver() {
-		if(driver!=null) {
+		if (driver != null) {
 			driver.quit();
 			driver = null;
 		}

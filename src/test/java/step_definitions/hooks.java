@@ -9,6 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import utilities.DataReader;
 import utilities.Driver;
 
 public class hooks {
@@ -17,8 +18,8 @@ public class hooks {
 	@Before
 	public void setup() {
 		System.out.println("This is before hook");
-		Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		Driver.getDriver().manage().window().maximize();
+		Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 	
 	@After
